@@ -1,0 +1,28 @@
+{
+  "name": "3squares",
+  "version": "1.0.0",
+  "description": "Application to provide low-income or homeless people meals provided from left-overs, restaurant surplus, grocery store near-out-of-date products and quality left-over food from other food suppliers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Elviag17/3squares.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Elviag17/3squares/issues"
+  },
+  "homepage": "https://github.com/Elviag17/3squares#readme",
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "eslint": "^6.0.1",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "handlebars": "^4.1.2",
+    "mysql2": "^1.6.5",
+    "sequelize": "^5.9.2"
+  }
+}
