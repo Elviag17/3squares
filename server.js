@@ -4,9 +4,15 @@
 // ******************************************************************************
 // *** Dependencies
 // =============================================================
+// Sets up the Express App
 var express = require("express");
 
-// Sets up the Express App
+//Other required dependencies
+const path = require("path");
+const logger = require("morgan");
+const session = require("express-session");
+const passport = require("./config/passport");
+const config = require("./config/extra-config");
 // =============================================================
 var app = express();
 var PORT = process.env.PORT || 8080;
