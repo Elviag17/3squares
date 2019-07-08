@@ -10,9 +10,11 @@ module.exports = {
       },
       item_name: {
         type: Sequelize.STRING
+        allowNull: false,
       },
       feeds_how_many: {
         type: Sequelize.INTEGER
+        allowNull: false,
       },
       created_date: {
         type: Sequelize.DATE
