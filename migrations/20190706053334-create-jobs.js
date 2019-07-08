@@ -9,7 +9,8 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       job_name: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        allowNull: false
       },
       job_length: {
         type: Sequelize.STRING

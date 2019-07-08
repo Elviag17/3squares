@@ -9,24 +9,24 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       vendor_name: {
-        type: Sequelize.STRING
-        allowNull: false,
+        type: Sequelize.STRING,
+        allowNull: false
       },
       vendor_address: {
-        type: Sequelize.STRING
-        allowNull: false,
+        type: Sequelize.STRING,
+        allowNull: false
       },
       vendor_phone: {
-        type: Sequelize.STRING
-        allowNull: false,
+        type: Sequelize.STRING,,
+        allowNull: false
       },
       vendor_contact_name: {
-        type: Sequelize.STRING
-        allowNull: false,
+        type: Sequelize.STRING,
+        allowNull: false
       },
       vendor_email: {
-        type: Sequelize.STRING
-        allowNull: false,
+        type: Sequelize.STRING,
+        allowNull: false
       },
       vendor_website_url: {
         type: Sequelize.STRING
@@ -41,8 +41,8 @@ module.exports = {
         type: Sequelize.STRING
       },
       distributor_only: {
-        type: Sequelize.BOOLEAN
-        allowNull: false,
+        type: Sequelize.BOOLEAN,
+        allowNull: false
       },
       createdAt: {
         allowNull: false,
