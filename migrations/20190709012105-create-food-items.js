@@ -9,12 +9,10 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       item_name: {
-        type: Sequelize.STRING,
-        allowNull: false
+        type: Sequelize.STRING
       },
       feeds_how_many: {
-        type: Sequelize.INTEGER,
-        allowNull: false
+        type: Sequelize.INTEGER
       },
       created_date: {
         type: Sequelize.DATE

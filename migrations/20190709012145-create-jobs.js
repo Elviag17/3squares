@@ -9,13 +9,18 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       job_name: {
-        type: Sequelize.STRING,
-        allowNull: false
+        type: Sequelize.STRING
       },
       job_length: {
         type: Sequelize.STRING
       },
       user_type: {
+        type: Sequelize.STRING
+      },
+      paid_unpaid: {
+        type: Sequelize.STRING
+      },
+      pay_amount: {
         type: Sequelize.STRING
       },
       createdAt: {
