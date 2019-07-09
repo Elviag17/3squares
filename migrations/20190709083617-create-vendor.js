@@ -1,33 +1,48 @@
 'use strict';
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.createTable('Distributors', {
+    return queryInterface.createTable('Vendors', {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      ditribution_name: {
+      vendor_name: {
         type: Sequelize.STRING
       },
-      distribution_address: {
+      vendor_address: {
         type: Sequelize.STRING
       },
-      distribution_phone: {
+      vendor_phone: {
         type: Sequelize.STRING
       },
-      distribution_contact_name: {
+      vendor_contact_name: {
         type: Sequelize.STRING
       },
-      distribution_email: {
+      vendor_email: {
         type: Sequelize.STRING
       },
-      distribution_url: {
+      vend_log: {
         type: Sequelize.STRING
       },
-      distributor_logo_image: {
+      vend_lat: {
         type: Sequelize.STRING
+      },
+      vendor_website_url: {
+        type: Sequelize.STRING
+      },
+      time_for_pickup: {
+        type: Sequelize.STRING
+      },
+      pickup_area_name: {
+        type: Sequelize.STRING
+      },
+      pickup_location: {
+        type: Sequelize.STRING
+      },
+      distributor_only: {
+        type: Sequelize.BOOLEAN
       },
       createdAt: {
         allowNull: false,
@@ -40,6 +55,6 @@ module.exports = {
     });
   },
   down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('Distributors');
+    return queryInterface.dropTable('Vendors');
   }
 };
