@@ -2,7 +2,7 @@
   "development": {
     "username": "root",
     "password": "Chicago13",
-    "database": "3squares",
+    "database": "three_squares",
     "host": "127.0.0.1",
     "dialect": "mysql",
     "operatorsAliases": false
