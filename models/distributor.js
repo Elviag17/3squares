@@ -1,10 +1,12 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
   const Distributor = sequelize.define('Distributor', {
-    ditribution_name: DataTypes.STRING,
+    distribution_name: DataTypes.STRING,
     distribution_address: DataTypes.STRING,
     distribution_phone: DataTypes.STRING,
     distribution_contact_name: DataTypes.STRING,
+    dist_long: DataTypes.STRING,
+    dist_lat: DataTypes.STRING,
     distribution_email: DataTypes.STRING,
     distribution_url: DataTypes.STRING,
     distributor_logo_image: DataTypes.STRING
