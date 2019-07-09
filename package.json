@@ -1,33 +1,35 @@
 {
-  "name": "3squares",
+  "name": "travel-secure",
+  "title": "",
   "version": "1.0.0",
-  "description": "Application to provide low-income or homeless people meals provided from left-overs, restaurant surplus, grocery store near-out-of-date products and quality left-over food from other food suppliers",
-  "main": "index.js",
+  "homepage": "https://safe-wildwood-89882.herokuapp.com/",
+  "author": "Omar Patel",
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/OSP123/TravelSecure"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
+  },
+  "devDependencies": {
+    "font-awesome": "^4.6.3"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Elviag17/3squares.git"
+    "url": "https://github.com/OSP123/TravelSecure.git"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Elviag17/3squares/issues"
-  },
-  "homepage": "https://github.com/Elviag17/3squares#readme",
   "dependencies": {
     "bcrypt": "^3.0.6",
-    "dotenv": "^8.0.0",
-    "eslint": "^6.0.1",
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0",
-    "express-sessions": "^1.0.6",
-    "handlebars": "^4.1.2",
+    "express-session": "^1.16.2",
     "morgan": "^1.9.1",
     "mysql2": "^1.6.5",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
-    "sequelize": "^5.9.2"
+    "sequelize": "^5.8.12"
+  },
+  "engines": {
+    "node": "7.8.0"
   }
 }
