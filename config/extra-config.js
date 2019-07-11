@@ -1,6 +1,5 @@
 var config = {
-  sessionKey:
-    process.env.sessionKey || "Welcome to triSquares.org user interface"
-};
+	sessionKey: process.env.sessionKey || "welcomeToThePartyRichter"
+}
 
 module.exports = config;
