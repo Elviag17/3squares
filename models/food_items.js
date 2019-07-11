@@ -9,6 +9,10 @@ module.exports = (sequelize, DataTypes) => {
   }, {});
   Food_items.associate = function(models) {
     // associations can be defined here
-  };
+    Post.belongsTo(models.Vendor, {
+      foreignKey: {
+        allowNull: false
+      }
+  });
   return Food_items;
 };
