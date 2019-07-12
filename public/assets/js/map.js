@@ -29,7 +29,7 @@ function initMap() {
     zoom: 13
   });
   geojson_url =
-    "https://raw.githubusercontent.com/gizm00/blog_code/master/appendto/python_maps/collection.geojson";
+    "https://raw.githubusercontent.com/Elviag17/3squares/coordinates/public/assets/coordinates.json";
 
   map.data.loadGeoJson(geojson_url, null, makeMarkers);
   infoWindow = new google.maps.InfoWindow();

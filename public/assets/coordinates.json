@@ -5,7 +5,7 @@
         "type": "Feature",
         "geometry": {
           "type": "Point",
-          "coordinates": [-34059825, -118444122]
+          "coordinates": [-34.059825, -118.444122]
         },
         "properties": {
           "description": "Vendor",
