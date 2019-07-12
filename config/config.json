@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "YaNg3918TASAN",
+    "password": "Chicago13",
     "database": "three_squares",
     "host": "127.0.0.1",
     "dialect": "mysql",
@@ -9,7 +9,7 @@
   },
   "test": {
     "username": "root",
-    "password": "YaNg3918TASAN",
+    "password": null,
     "database": "database_test",
     "host": "127.0.0.1",
     "dialect": "mysql",
