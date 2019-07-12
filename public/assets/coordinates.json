@@ -1,0 +1,18 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-34059825, -118444122]
+        },
+        "properties": {
+          "description": "Vendor",
+          "title": "CVS Pharmacy",
+          "marker-size": "small"
+        }
+      }
+    ]
+   }
+  
