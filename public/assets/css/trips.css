@@ -41,8 +41,8 @@ body {
   display: inline-block;
 }
 
-.bottom-trip-container {
-}
+/* .bottom-trip-container {
+} */
 
 /* Map CSS */
 
@@ -61,10 +61,10 @@ form,
   float: left;
 }
 
-#map {
+/* #map {
   width: 100%;
   height: 300px;
-}
+} */
 
 /*#locationField, #controls {
   position: relative;
