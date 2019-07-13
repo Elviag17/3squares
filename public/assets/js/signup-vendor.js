@@ -1,14 +1,17 @@
 $(document).ready(function() {
   // Getting references to our form and input
-  var signUpButton = $('.signup');
-  var firstnameInput = $('input#first-name-input');
-  var lastnameInput = $('input#last-name-input');
-  var emailInput = $('input#email-input');
+  var signUpButton = $('.signupvendor');
+  var vendornameInput = $('input#vendor-name-input');
+  var vendorcontactnameInput = $('input#vendor-contact-name-input');
+  var vendorphoneInput = $('input#vendor-phone-input');
+  var emailInput = $('input#vendor-email-input');
   var passwordInput = $('input#password-input');
-  var addressInput = $('input#address-input');
-  var phoneInput = $('input#phone-input');
-  var employedInput = $('input#employed-input');
-  var livingInput = $('input#living-situation-input');
+  var vendoraddressInput = $('input#vendor-address-input');
+  var vendorwebsiteInput = $('input#vendor-website-url-input');
+  var distributorInput = $('input#distributor-only-input');
+  var pickuptimeInput = $('input#pickup-time-input');
+  var pickupareaInput = $('input#pickup-area-input');
+  var pickuplocationInput = $('input#pickup-location-input');
   var repeatPasswordInput = $('input#repeat-password-input');
   // var repeatEmailInput = $("input#repeat-email-input");
 
@@ -96,26 +99,30 @@ $(document).ready(function() {
 
     var userData = {
       //NEW INFO TO ADD
-      first_name: firstnameInput.val().trim(),
-      last_name: lastnameInput.val().trim(),
-      phone: phoneInput.val().trim(),
-      address: addressInput.val().trim(),
-      living_situation: livingInput.val().trim(),
-      job_situation: employedInput.val().trim(),
-      email: emailInput.val().trim(),
-      password: passwordInput.val().trim()
-      //END OF NEW INFO TO ADD
+      vendor_name: vendornameInput.val().trim(),
+      vendor_address: vendoraddressInput.val().trim(),
+      vendor_phone: vendorphoneInput.val().trim(),
+      vendor_contact_name: vendorcontactnameInput.val().trim(),
+      vendor_email: emailInput.val().trim(),
+      vendor_password: vendoraddressInput.val().trim(),
+      vendor_website_url: vendorwebsiteInput.val().trim(),
+      time_for_pickup: pickuptimeInput.val().trim(),
+      pickup_area_name: pickupareaInput.val().trim(),
+      pickup_location: pickuplocationInput.val().trim(),
+      distributor_only: distributorInput.val().trim()
     };
 
     if (
-      !userData.first_name ||
-      !userData.last_name ||
-      !userData.phone ||
-      !userData.address ||
-      !userData.living_situation ||
-      !userData.job_situation ||
-      !userData.email ||
-      !userData.password
+      !userData.vendor_name ||
+      !userData.vendor_address ||
+      !userData.vendor_phone ||
+      !userData.vendor_contact_name ||
+      !userData.vendor_email ||
+      !userData.vendor_password ||
+      !userData.vendor_website_url ||
+      !userData.time_for_pickup ||
+      !userData.pickup_area_name ||
+      !userData.pickup_location
     ) {
       return alert("Please don't leave fields blank");
     }
@@ -123,55 +130,60 @@ $(document).ready(function() {
     console.log('hey');
     // If we have an email and password, run the signUpUser function
     signUpUser(
-      userData.first_name,
-      userData.last_name,
-      userData.phone,
-      userData.address,
-      userData.living_situation,
-      userData.job_situation,
-      userData.email,
-      userData.password
+      userData.vendor_name,
+      userData.vendor_address,
+      userData.vendor_phone,
+      userData.vendor_contact_name,
+      userData.vendor_email,
+      userData.vendor_password,
+      userData.vendor_website_url,
+      userData.time_for_pickup,
+      userData.pickup_area_name,
+      userData.pickup_location,
+      userData.distributor_only
     );
-    // emailInput.val('');
-    // passwordInput.val('');
-    // usernameInput.val('');
-    // repeatPasswordInput.val('');
-    // repeatEmailInput.val('');
-    firstnameInput.val('');
-    lastnameInput.val('');
-    phoneInput.val('');
-    addressInput.val('');
-    livingInput.val('');
-    employedInput.val('');
+    vendornameInput.val('');
+    vendoraddressInput.val('');
+    vendorphoneInput.val('');
+    vendorcontactnameInput.val('');
     emailInput.val('');
-    passwordInput.val('');
-    repeatPasswordInput.val('');
+    vendoraddressInput.val('');
+    vendorwebsiteInput.val('');
+    pickuptimeInput.val('');
+    pickupareaInput.val('');
+    pickuplocationInput.val('');
+    distributorInput.val('');
   });
 
   // Does a post to the signup route. If succesful, we are redirected to the members page
   // Otherwise we log any errors
   function signUpUser(
-    first_name,
-    last_name,
-    phone,
-    address,
-    living_situation,
-    job_situation,
-    email,
-    password
+    vendor_name,
+    vendor_address,
+    vendor_phone,
+    vendor_contact_name,
+    vendor_email,
+    vendor_password,
+    vendor_website_url,
+    time_for_pickup,
+    pickup_area_name,
+    pickup_location,
+    distributor_only
   ) {
     console.log('here');
     // debugger;
     $.post('/users/signup', {
-      first_name: first_name,
-      last_name: last_name,
-      phone: phone,
-      address: address,
-      living_situation: living_situation,
-      job_situation: job_situation,
-      // username: username,
-      email: email,
-      password: password
+      vendor_name: vendor_name,
+      vendor_address: vendor_address,
+      vendor_phone: vendor_phone,
+      vendor_contact_name: vendor_contact_name,
+      vendor_email: vendor_email,
+      vendor_password: vendor_password,
+      vendor_website_url: vendor_website_url,
+      time_for_pickup: time_for_pickup,
+      pickup_area_name: pickup_area_name,
+      pickup_location: pickup_location,
+      distributor_only: distributor_only
     })
       .then(function(data) {
         if (data.duplicateUser) {

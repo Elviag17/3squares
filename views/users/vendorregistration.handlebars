@@ -7,25 +7,25 @@
 
 				<div id="name-form" class="form-group col-lg-12">
 					<label>Name of Business</label>
-					<input type="text" name="" class="form-control" id="business-name-input" value="">
+					<input type="text" name="" class="form-control" id="vendor-name-input" value="">
 					<small id="username-feedback" class=""></small>
 				</div>
 
 				<div id="name-form" class="form-group col-lg-6">
-					<label>Name</label>
-					<input type="text" name="" class="form-control" id="-name-input" value="">
+					<label>Contact Name</label>
+					<input type="text" name="" class="form-control" id="vendor-contact-name-input" value="">
 					<small id="username-feedback" class=""></small>
 				</div>
 
 				<div id="name-form" class="form-group col-lg-6">
 					<label>Phone</label>
-					<input type="text" name="" class="form-control" id="phone-input" value="">
+					<input type="text" name="" class="form-control" id="vendor-phone-input" value="">
 					<small id="username-feedback" class=""></small>
 				</div>
 
 				<div id="email-form" class="form-group col-lg-4">
 					<label>Email Address</label>
-					<input type="email" name="" class="form-control" id="email-input" value="">
+					<input type="email" name="" class="form-control" id="vendor-email-input" value="">
 					<p id="email-feedback" class=""></p>
 					<small id="email-additional-feedback" class="form-text text-muted"></small>
 				</div>
@@ -50,31 +50,40 @@
 
 				<div id="name-form" class="form-group col-lg-6">
 					<label>Business Website URL</label>
-					<input type="text" name="" class="form-control" id="-name-input" value="">
+					<input type="text" name="" class="form-control" id="vendor-website-url-input" value="">
 					<small id="username-feedback" class=""></small>
 				</div>
 
 				<div id="name-form" class="form-group col-lg-6">
+					<label>Distributor Only (*See Below)</label>
+					<input type="text" name="" class="form-control" id="distributor-only-input" value="Yes or No">
+					<small id="username-feedback" class=""></small>
+				</div>
+
+				<div id="name-form" class="form-group col-lg-4">
 					<label>Best Pick-Up Time</label>
-					<input type="text" name="" class="form-control" id="vendor-pickup-time-input" value="">
+					<input type="text" name="" class="form-control" id="pickup-time-input" value="">
 					<small id="username-feedback" class=""></small>
 				</div>
 
-				<div id="name-form" class="form-group col-lg-6">
+				<div id="name-form" class="form-group col-lg-4">
 					<label>Pick-Up Area</label>
-					<input type="text" name="" class="form-control" id="vendor-pickup-area-input" value="">
+					<input type="text" name="" class="form-control" id="pickup-area-input" value="">
 					<small id="username-feedback" class=""></small>
 				</div>
-				<div id="name-form" class="form-group col-lg-6">
+				<div id="name-form" class="form-group col-lg-4">
 					<label>Pick-Up Location</label>
-					<input type="text" name="" class="form-control" id="vendor-pickup-location-input" value="">
+					<input type="text" name="" class="form-control" id="pickup-location-input" value="">
 					<small id="username-feedback" class=""></small>
 				</div>
-
-				<div id="address-form" class="form-group col-lg-7">
-					<input type="checkbox" class="checkbox" />Provide Food for Distributor Pick-up Only
+				<div>
+					<b>*Distributor Only</b> if you only plan to provide food for pick-up from one of our verified
+					vendors enter "YES". Otherwise you will also be selling food direct to our users at a discounted
+					price.
 				</div>
-
+				{{!-- <div id="address-form" class="form-group col-lg-7">
+					<input type="checkbox" class="checkbox" />Provide Food for Distributor Pick-up Only
+				</div> --}}
 			</div>
 
 			<div class="col-md-6">
@@ -92,7 +101,7 @@
 					lobortis justo eget pellentesque lobortis.
 				</p>
 
-				<button type="submit" class="btn btn-primary signup">Register</button>
+				<button type="submit" class="btn btn-primary signupvendor">Register</button>
 			</div>
 		</div>
 	</section>
