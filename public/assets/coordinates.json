@@ -1,18 +1,172 @@
 {
-    "type": "FeatureCollection",
-    "features": [
-      {
-        "type": "Feature",
-        "geometry": {
-          "type": "Point",
-          "coordinates": [-34.059825, -118.444122]
-        },
-        "properties": {
-          "description": "Vendor",
-          "title": "CVS Pharmacy",
-          "marker-size": "small"
-        }
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "CVS Pharmacy",
+        "position": "Vendor"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.44551324844359,
+          34.06248129725139
+        ]
       }
-    ]
-   }
-  
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Trader Joes",
+        "position": "Vendor"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.44392001628876,
+          34.062194656817205
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fat Sals",
+        "position": "Vendor"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.44800502061842,
+          34.0624857412815
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "In and Out",
+        "position": "Vendor"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.44811230897903,
+          34.06315234315828
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Roscoes Chicken and Waffles",
+        "position": "Vendor"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.34630638360977,
+          34.047563597144254
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ralphs",
+        "position": "Vendor"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.33937555551529,
+          34.04831698949181
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Panda Express",
+        "position": "Vendor"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.37593138217925,
+          34.04932816928885
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Upward Bound House - Family Shelter",
+        "position": "Distributor"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.43811571598053,
+          33.995605614514076
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Friends Helping Friends LA",
+        "position": "Distributor"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.32917243242264,
+          34.01990124208256
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The Salvation Army Haven",
+        "position": "Distributor"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.45697164535522,
+          34.05433055390644
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Los Angeles California Temple",
+        "position": "Distributor"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.43308925628662,
+          34.05093492029233
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+       "name": "Univeristy Bible Church",
+        "position": "Distributor"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4401488304138,
+          34.0599126088544
+        ]
+      }
+    }
+  ]
+}

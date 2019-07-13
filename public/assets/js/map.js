@@ -2,36 +2,15 @@ var map, infoWindow;
 var markers = [];
 var currentLocation;
 
-function makeMarkers() {
-  infoWindow = new google.maps.InfoWindow();
-  map.data.forEach(function(feature) {
-    var latitude = feature
-      .getGeometry()
-      .get()
-      .lat();
-    var longitude = feature
-      .getGeometry()
-      .get()
-      .lng();
-
-    var marker = new google.maps.Marker({
-      position: { lat: latitude, lng: longitude },
-      map: map,
-      animation: google.maps.Animation.DROP
-    });
-    markers.push(marker);
-  });
-}
-
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
     center: { lat: 42.9446, lng: -122.109 },
     zoom: 13
   });
-  geojson_url =
-    "https://raw.githubusercontent.com/Elviag17/3squares/coordinates/public/assets/coordinates.json";
 
-  map.data.loadGeoJson(geojson_url, null, makeMarkers);
+  //Load geoJson
+  map.data.loadGeoJson("/assets/coordinates.json");
+
   infoWindow = new google.maps.InfoWindow();
 
   // Try HTML5 geolocation.
@@ -55,7 +34,6 @@ function initMap() {
 
           title: "My Location"
         });
-        marker.setMap(map);
 
         //geocoding to retrieve address
         $.get(
