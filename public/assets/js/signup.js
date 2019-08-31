@@ -1,17 +1,17 @@
 $(document).ready(function() {
   // Getting references to our form and input
-  var signUpButton = $(".signup");
-  var firstnameInput = $("input#first-name-input");
-  var lastnameInput = $("input#last-name-input");
-  var usernameInput = $("input#username-input");
-  var emailInput = $("input#email-input");
-  var passwordInput = $("input#password-input");
-  var addressInput = $("input#address-input");
-  var phoneInput = $("input#phone-input");
-  var employedInput = $("input#employed-input");
-  var livingInput = $("input#living-situation-input");
 
-  var repeatPasswordInput = $("input#repeat-password-input");
+  var signUpButton = $('.signup');
+  var firstnameInput = $('input#first-name-input');
+  var lastnameInput = $('input#last-name-input');
+  var emailInput = $('input#email-input');
+  var passwordInput = $('input#password-input');
+  var addressInput = $('input#address-input');
+  var phoneInput = $('input#phone-input');
+  var employedInput = $('input#employed-input');
+  var livingInput = $('input#living-situation-input');
+  var repeatPasswordInput = $('input#repeat-password-input');
+
   // var repeatEmailInput = $("input#repeat-email-input");
 
   // Username "on-the-fly" validation
@@ -97,9 +97,7 @@ $(document).ready(function() {
     // Replace all alerts with modals
 
     var userData = {
-      username: usernameInput.val().trim(),
-      // email: emailInput.val().trim(),
-      // password: passwordInput.val().trim()
+
       //NEW INFO TO ADD
       first_name: firstnameInput.val().trim(),
       last_name: lastnameInput.val().trim(),
