@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "YaNg3918TASAN",
+    "password": process.env.LOCALDB,
     "database": "three_squares",
     "host": "127.0.0.1",
     "dialect": "mysql",
@@ -16,10 +16,10 @@
     "operatorsAliases": false
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
+    "username": "cqt0k7hekrxpae0b",
+    "password": "nxhcgb67i1c3xe92",
+    "database": "bwlbtxbc16g680v8",
+    "host": "q57yawiwmnaw13d2.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql",
     "operatorsAliases": false
   }

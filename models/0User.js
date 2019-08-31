@@ -1,9 +1,9 @@
-'use strict';
-var bcrypt = require('bcrypt');
+"use strict";
+var bcrypt = require("bcrypt");
 
 module.exports = function(sequelize, DataTypes) {
   var User = sequelize.define(
-    'User',
+    "User",
     {
       username: {
         type: DataTypes.STRING,
@@ -45,7 +45,7 @@ module.exports = function(sequelize, DataTypes) {
   User.associate = function(models) {
     // associations can be defined here
     User.hasMany(models.Trip, {
-      onDelete: 'cascade'
+      onDelete: "cascade"
     });
   };
   return User;
