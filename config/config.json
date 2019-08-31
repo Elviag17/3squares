@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": process.env.LOCALDB,
+    "password": "Chicago13",
     "database": "three_squares",
     "host": "127.0.0.1",
     "dialect": "mysql",
